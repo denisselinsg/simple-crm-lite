@@ -4,7 +4,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import com.example.simple_crm_lite.model.Customer;
 import com.example.simple_crm_lite.repository.CustomerRepository;
@@ -14,11 +13,6 @@ public class SimpleCrmLiteApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SimpleCrmLiteApplication.class, args);
-    }
-
-    @GetMapping("/hello")
-    public String hello() {
-        return "Simple CRM!";
     }
 
     @Bean
